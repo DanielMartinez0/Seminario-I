@@ -1,0 +1,321 @@
+% All my custom preamble stuff.  Shouldn't overlap with anything in official-preamble
+
+
+
+
+%\usepackage{bm}  % for warped mixtures - is this necessary?
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{datetime}
+
+% for the list of publications
+
+%\usepackage[resetlabels]{multibib}
+\usepackage{bibentry}
+%\usepackage{bibunits}
+\nobibliography*
+
+\renewcommand{\tabularxcolumn}[1]{>{\arraybackslash}m{#1}}
+\usepackage{relsize}
+\usepackage{graphicx}
+%\usepackage{amsmath,amssymb,textcomp}
+\usepackage{nicefrac}
+%\usepackage{natbib}
+%\usepackage{amsthm}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{bayesnet}
+\usepackage{nth}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage{fp}
+\usepackage{cleveref}   % Note: this package sometimes causes the page counter to reset.
+\crefname{equation}{equation}{equations}
+\crefname{figure}{figure}{figures}
+
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+%\usepackage{common/sectsty}
+
+% Controls capitalization of all headers
+%\usepackage{stringstrings}
+%\usepackage[explicit]{titlesec}
+%\newcommand\SentenceCase[1]{%
+%  \caselower[e]{#1}%
+%  \capitalize[q]{\thestring}%
+%}
+%\titleformat{\section}
+%  {\normalfont\Large\bfseries}{\thesection}{1em}{\SentenceCase{#1}\thestring}
+
+
+%\titleformat{\section} % The normal, unstarred version
+%    {\Large\bfseries}{}{2ex}
+%    {\thesection. \MakeSentenceCase{#1}}
+
+%\titleformat{name=\section,numberless} % The starred version; note the `numberless` key
+%    {\Large\bfseries}{}{2ex}
+%    {\MakeSentenceCase{#1}}
+
+\usepackage[hyperpageref]{backref}
+% Setup to show (pages 4 and 9) sort of thing in the bibliography - DD
+%\def\foo{\hspace{\fill}\mbox{}\linebreak[0]\hspace*{\fill}}
+%\def\foo{\parbox{3cm}{\hfill}
+%\def\foo{\parbox{3cm}{\hfill}
+%\newcommand\foo[1]{{\raggedleft{\hfill{\mbox{\hfill{#1}}}}}}
+\newcommand{\comfyfill}[1]{% = Thorsten Donig's \signed
+  \unskip\hspace*{0.1em plus 1fill}
+  \nolinebreak[3]%
+  \hspace*{\fill}\mbox{#1}
+  \parfillskip0pt\par
+}
+\newcommand\foo[1]{{\comfyfill{\mbox{#1}}}}
+%\newcommand\foo[1]{{\mbox{#1}}}
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+\ifcase #1 %
+%
+\or
+\foo{(page #2)}%
+\else
+\foo{(pages #2)}%
+\fi
+}
+
+\usepackage{stringstrings}
+
+% Setup TikZ
+\usetikzlibrary{arrows,calc,shadings,shapes,shadows,decorations.pathreplacing,positioning}
+\tikzstyle{block}=[draw opacity=0.7,line width=1.4cm]
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+\tikzstyle{blockb} = [draw, rectangle, 
+minimum height=2em, minimum width=2em]
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+\tikzstyle{block} = [draw, rectangle, 
+minimum height=1em, minimum width=1em]
+\tikzstyle{blockg} = [draw, fill=green!20, rectangle, 
+minimum height=10em, minimum width=2em, drop shadow]
+\tikzstyle{blockr} = [draw, fill=red!20, rectangle, 
+minimum height=10em, minimum width=2em, drop shadow]
+\tikzstyle{blockb} = [draw, rectangle, 
+minimum height=2em, minimum width=2em]
+\tikzstyle{sum} = [draw, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+
+%\newcommand{\headercase}{\
+%\DeclareFieldFormat{titlecase}{\MakeSentenceCase{#1}}
+
+
+%% For submission, make all render blank.
+\input{common/commenting.tex}
+%\renewcommand{\LATER}[1]{}
+%\renewcommand{\fLATER}[1]{}
+%\renewcommand{\TBD}[1]{}
+%\renewcommand{\fTBD}[1]{}
+%\renewcommand{\PROBLEM}[1]{}
+%\renewcommand{\fPROBLEM}[1]{}
+%\renewcommand{\NA}[1]{}
+
+
+% HUMBLE WORDS: shown slightly smaller when in normal text
+% Thanks to Christian Steinruecken!
+\input{common/humble.tex}
+
+\def\subexpr{{\cal S}}
+\def\baseker{{\cal B}}
+\def\numWinners{k}
+
+\def\ie{i.e.\ }
+\def\eg{e.g.\ }
+\def\etc{etc.\ }
+\let\oldemptyset\emptyset
+%\let\emptyset 0
+
+\DeclareMathOperator{\erf}{erf} 
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im} 
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\cov}{cov} 
+\DeclareMathOperator{\ex}{\mathbb{E}}
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\bdiag}{blockdiag}
+\DeclareMathOperator{\vecO}{vec} \DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\const}{const}
+\DeclareMathOperator{\entropy}{H}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+
+\renewcommand{\Re}{\mathbb{R}}
+
+\newcommand{\boldt}{\mathbf{t}}
+\newcommand{\boldw}{\mathbf{w}}
+\newcommand{\bolde}{\mathbf{e}}
+\newcommand{\bolds}{\mathbf{s}}
+\newcommand{\boldy}{\mathbf{y}} % output space
+\newcommand{\boldx}{\mathbf{x}} % input space of the outputs
+\newcommand{\boldz}{\mathbf{z}} % input space of the latent functions
+\newcommand{\boldh}{\mathbf{h}} % lag
+\newcommand{\boldk}{\mathbf{k}} % kernel or covariance
+\newcommand{\boldf}{\mathbf{f}} % outputs without noise
+\newcommand{\boldu}{\mathbf{u}} % vector for latent function
+\newcommand{\bolda}{\mathbf{a}} % vector for SLFM function
+\newcommand{\boldl}{\mathbf{l}} % vector for lenghtscales
+\newcommand{\boldm}{\mathbf{m}} % vector for means
+\newcommand{\boldg}{\mathbf{g}} % vector for means
+\newcommand{\boldb}{\mathbf{b}} % vector for means
+\newcommand{\boldJ}{\mathbf{J}} % vector for means
+
+\newcommand{\boldbeta}{\bm{\beta}}
+\newcommand{\boldpsi}{\bm{\psi}}
+\newcommand{\boldPsi}{\bm{\Psi}}
+\newcommand{\boldmu}{\bm{\mu}}
+\newcommand{\boldgamma}{\bm{\gamma}}
+\newcommand{\boldsigma}{\bm{\sigma}}
+\newcommand{\boldlambda}{\bm{\lambda}}
+\newcommand{\boldSigma}{\bm{\Sigma}}
+\newcommand{\boldUpsi}{\bm{\Upsilon}}% vector of coefficients in th IMC
+\newcommand{\boldupsi}{\bm{\upsilon}}% vector of coefficients in th IMC
+\newcommand{\boldtheta}{\bm{\theta}}% vector of coefficients in th IMC
+\newcommand{\boldepsilon}{\bm{\epsilon}}
+\newcommand{\boldGamma}{\bm{\Gamma}}
+
+\newcommand{\LowerBound}{\mathcal{F}}
+
+%Operators
+\DeclareMathOperator{\deriv}{d} 
+\DeclareMathOperator{\dif}{d}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+%State space Matrices
+\newcommand{\boldA}{\mathbf{A}} % matrix of dynamics
+\newcommand{\boldB}{\mathbf{B}} % matrix of excitation 
+\newcommand{\boldC}{\mathbf{C}}
+
+\newcommand{\boldQ}{\mathbf{Q}}
+\newcommand{\boldF}{\mathbf{F}}
+\newcommand{\boldL}{\mathbf{L}}
+\newcommand{\boldH}{\mathbf{H}} %
+\newcommand{\boldq}{\mathbf{q}} % 
+\newcommand{\boldr}{\mathbf{r}} % 
+\newcommand{\boldR}{\mathbf{R}} % 
+\newcommand{\boldv}{\mathbf{v}} % 
+
+\newcommand{\boldG}{\mathbf{G}}
+\newcommand{\boldK}{\mathbf{K}} % kernel or covariance
+\newcommand{\boldZ}{\mathbf{Z}}
+\newcommand{\boldS}{\mathbf{S}}
+\newcommand{\boldX}{\mathbf{X}} % The whole set of input vectors
+\newcommand{\boldI}{\mathbf{I}} % The identity matrix
+\newcommand{\boldP}{\mathbf{P}} % coregionalization matrix
+\newcommand{\boldM}{\mathbf{M}} % coregionalization matrix
+
+
+\newcommand{\boldAtilde}{\mathbf{\widetilde{A}}} % vector for SL\boldK_{\boldu,\boldu}^{-1}\widetilde{\boldK}_{\boldu,\boldu}\boldK_{\boldu,\boldu}^{-1}FM function
+\newcommand{\inputSpace}{\mathcal{X}} % The input space
+\newcommand{\eye}{\mathbf{I}}   % identity matrix
+
+\newcommand{\params}{\bm{\theta}} % Parameters of LMC model
+\newcommand{\veC}{\textbf{\hspace{-0.001in}:}} % Simplified version of the vec operator (vec = :)
+\newcommand{\preci}{\mathbf{P}}% Precision for the Gaussians
+\newcommand{\dataset}{{\cal D}} % dataset
+\newcommand{\gauss}{\mathcal{N}} % Gaussian density
+\newcommand{\gammad}{\operatorname{Gamma}} % Gamma density
+\newcommand{\betad}{\operatorname{Beta}} % Beta density
+\newcommand{\bernd}{\operatorname{Bernoulli}} % Bernoulli density
+\newcommand{\ones}{\mathbf{1}}
+\newcommand{\zeros}{\mathbf{0}}
+
+\newcommand\Tau{\mathcal{T}}% Caligraphic T for example
+\newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial #2}}
+
+
+%%%%% my maths definitions
+
+%\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\gD}[2]{\mathcal{N}\left(#1,#2\right)}
+\newcommand{\dWj}{\partial\projMat}
+\newcommand{\kernel}[2]{k\left(#1,#2\right)}
+\newcommand{\kernelww}[2]{k\left(\mathbf{w}_{#1}^v,\mathbf{w}_{#2}^d\right)}
+\newcommand{\kernelwx}[1]{k\left(\mathbf{w}_{#1}^v,\indobj\right)}
+\newcommand{\catD}[2]{\mathcal{G}\left(#1,#2\right)}
+\newcommand{\Z}{\boldsymbol{\mathrm{Z}}}
+%\newcommand{\C}{\boldsymbol{\Lambda}_j}
+\newcommand{\Cin}{\mathbf{C}_j}
+\newcommand{\Cnl}{\boldsymbol{\Lambda}_j}
+\newcommand{\muJ}{\boldsymbol{\mu}_j}
+\newcommand{\gammaA}{\Gamma\left(a\right)}
+%\newcommand{\eye}{\mathbf{I}}
+\newcommand{\Scluster}{\mathbf{S}}
+\newcommand{\W}{\boldsymbol{\mathcal{W}}}
+
+\newcommand{\WIn}{\mathbf{W}}
+
+\newcommand{\setX}{\mathbf{X}}
+\newcommand{\setXphi}{\boldsymbol{\Phi}}
+\newcommand{\setObj}{\mathbf{X}_v}
+%\newcommand{\setObj}{\mathbf{X}_d}
+\newcommand{\setObjH}{\bm{\Phi}_v}
+%\newcommand{\indobj}{\mathbf{x}_{dn}}
+\newcommand{\indobj}{\mathbf{x}_{vn}}
+\newcommand{\indobjm}{\mathbf{x}_{vm}}
+
+%\newcommand{\projMat}{\boldsymbol{\mathcal{W}}_d}
+\newcommand{\projMat}{\bm{B}_v}
+
+\newcommand{\projMatI}{\mathbf{W}_v}
+\newcommand{\dWjIn}{\partial\projMatI}
+\newcommand{\lvecI}{\mathbf{z}_j}
+\newcommand{\lvecsI}{\mathbf{z}_{s_{vn}}}
+\newcommand{\lvec}{\boldsymbol{\zeta}_j}
+\newcommand{\lvecs}{\boldsymbol{\zeta}_{s_{vn}}}
+\newcommand{\mixwe}{{\theta}_j}
+\newcommand{\mapphi}{\phi\left(x\right)}
+\newcommand{\mapphit}{\phi\left(x'\right)}
+\newcommand{\comment}[2]{{\color{blue}#1} {\color{red}#2}}
+\newcommand{\phixnd}{\boldsymbol{\phi}\left(\indobj\right)}
+\newcommand{\phixmd}{\boldsymbol{\phi}\left(\indobjm\right)}
+\newcommand{\phiwld}[1]{\boldsymbol{\varphi}\left(\mathbf{w}_{#1}^d\right)}
+\newcommand{\phiwldI}[2]{\varphi_{#2}\left(\mathbf{w}_{#1}^v\right)}
+\newcommand{\wH}{\boldsymbol{\omega}_{j}^v}
+\newcommand{\wHj}[1]{\boldsymbol{\omega}_{#1}^v}
+\newcommand{\wIj}[1]{\mathbf{w}_{#1}^v}
+\newcommand{\muJFa}{\sum_{v=1}^{V}\mathbf{\hat{k}}_v }
+\newcommand{\kawx}{\mathbf{\hat{k}}_v }
+\newcommand{\Kaww}{\mathbf{\hat{K}}_v }
+\newcommand{\Kv}{\mathbf{K}_v }
+\newcommand{\dWd}{\partial \boldsymbol{\Theta}}
+\newcommand{\phix}{\bm{\phi}\left(\mathbf{x}\right)}
+\newcommand{\phixp}{\bm{\phi}\left(\mathbf{x}^\prime\right)}
+
+%% multiview model
+\newcommand{\setWv}{\mathbf{W}^{v}}
+\newcommand{\setYv}{\mathbf{Y}_{v}}
+\newcommand{\setY}{\mathbf{Y}}
+\newcommand{\setZ}{\mathbf{Z}}
+\newcommand{\setSv}{\mathbf{S}_{v}}
+\newcommand{\setXv}{\mathbf{X}_{v}}
+\newcommand{\setZv}{\mathbf{Z}_{v}}
+\newcommand{\setFv}{\mathbf{F}_{v}}
+\newcommand{\setKv}{\mathbf{K}_{v}}
+\newcommand{\hParams}{\boldsymbol{\theta}}
+\newcommand{\hParamsv}{\boldsymbol{\theta}^{v}}
+\newcommand{\obspv}{\mathbf{x}_{nv}}
+\newcommand{\lambdac}{\lambda_c}
+\newcommand{\muC}{\boldsymbol{\mu}_c}
+\newcommand{\RC}{\mathbf{R}_c}
+\newcommand{\Cnlc}{\boldsymbol{\Lambda}_c}
+\newcommand{\Cnlw}{\boldsymbol{\Lambda}}
+
+\newcommand{\likel}{\log p\left(\boldsymbol{\Phi},\mathbf{S}|\W,a,b,r,\gamma\right)}
+\newcommand{\GP}[2]{\mathcal{GP}\left(#1,#2\right)}
+
+%\counterwithout*{footnote}{chapter}
