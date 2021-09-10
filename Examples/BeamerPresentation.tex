@@ -1,9 +1,12 @@
 \documentclass{beamer}
 
 \usepackage{amsmath}
-
-
 \mode<presentation>{\usetheme{UdeA}}
+\usepackage[style=verbose]{biblatex}
+\addbibresource{biblio.bib}
+
+\usepackage{multimedia}
+\usepackage{hyperref}
 
 \renewcommand{\figurename}{Figura}
 
@@ -60,17 +63,41 @@ Definición del problema.
 \end{frame}
 
 \begin{frame}{Test Branch}
-HOLA MUNDO!
+HOLA MUNDO! \citeauthor{Rasmunssen05}
 \end{frame}
 	
 	\section{Materials and Methods}
 	
 	\begin{frame}{PCA}
 	\begin{align}
-	\mathbf{z} = \mathbf{W}\mathbf{x}
+	\mathbf{z} = \mathbf{W}\mathbf{x} 
 	\end{align}
+	Hola Mundo \footcite{Rasmunssen05}
 \end{frame}
+
+\section{Media Files}
+
+\begin{frame}{Video on the computer}
+\centering
+\movie[externalviewer]{\includegraphics[width=\textheight, keepaspectratio]{img/img2}}{img/sample5s}
+\end{frame}
+
+\begin{frame}{YouTube Video}
+\begin{figure}
+\centering
+\href{https://youtu.be/3BLYxQKv668}{
+	\includegraphics[width=\textheight, keepaspectratio]{img/img2}
+	\label{fig:my_label}}
+\end{figure}
+\end{frame}
+
 	\section{Results}
+	
+	\begin{frame}{Values}
+	\begin{alertblock}{block title}
+ALERT BLOCK
+	\end{alertblock}
+\end{frame}
 	\section{Conclusions and Future Works}
 	
 	\begin{frame}{Conclusions and Future Works}
@@ -80,6 +107,12 @@ HOLA MUNDO!
 		\item sub conclusion
 	\end{itemize}
 \end{itemize}
+\end{frame}
+
+\begin{frame}{REF}
+%\bibliography{biblio}
+%\bibliographystyle{plain}
+\printbibliography
 \end{frame}
 
 \end{document}

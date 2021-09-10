@@ -1,4 +1,11 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Motivation}{2}{0}{1}
-\beamer@sectionintoc {2}{Materials and Methods}{3}{0}{2}
-\beamer@sectionintoc {3}{Results}{4}{0}{3}
-\beamer@sectionintoc {4}{Conclusions and Future Works}{4}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Materials and Methods}{4}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Media Files}{5}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Results}{7}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Conclusions and Future Works}{8}{0}{5}

@@ -1,0 +1,105 @@
+\input{common/header.tex}
+\inbpdocument
+
+%\fancyhf{Notation}
+%\renewcommand{\headrulewidth}{0pt}
+
+%\thispagestyle{empty}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+
+\chapter*{Notation}
+\label{ch:notation}
+\addcontentsline{toc}{chapter}{Notation}
+\chaptermark{Notation}
+\section*{\large Mathematical notation}
+
+\subsection*{Generalities}
+
+\begin{tabular}{m{3cm}m{12cm}}
+$V$ & number of views\\
+$N_v$ & Number of objects (observations) in the $v$th view\\
+$D_v$ & dimensionality of the $v$-th view\\
+$L_v$ & Dimensionality of the observed features in the $v$th view\\
+$K$ & Dimensionality of the latent feature vector \\
+$J$ & Number of correspondences (latent vectors) to which objects are assigned\\
+%$T$ & sampling period for discrete models\\
+%$N$ & total number of data points\\
+%$N_v$ & number of data points for the $v$-th output\\
+%$\mathbb{Z}$ & set of the integer numbers \{1,2,\ldots,$P$\}\\
+%$t$ & input time
+\end{tabular}
+
+\subsection*{Operators}
+
+\begin{tabular}{m{3cm}m{12cm}}
+	$\ex[\cdot]$ & expected value\\
+	$\tr(\cdot)$ & trace of a matrix\\
+%	$\entropy(q(x))$ & Shannon entropy of $q(x)$\\
+%	$\boldA \odot \boldB$ & Hadamard product between matrices $\boldA$ and $\boldB$
+\end{tabular}
+
+\subsection*{Functions}
+
+\begin{tabular}{m{3cm}m{12cm}}
+%	$G(t)$ & Green's function or impulse response function\\
+%	$u_q(t)$ & $q$-th input, forcing or excitation function evaluated at $t$\\
+	$\kernel{\cdot}{\cdot}$ & covariance function for a Gaussian process of $\indobj$\\
+	$f_d(t)$ & $d$-th output or response function evaluated at $t$\\
+	 $\bm{\phi}\left(\cdot\right)$ & nonlinear mapping function\\
+%	$\boldf(t)$ & vector-valued function, $\boldf(t) = [f_1(t),\ldots,f_D(t)]^{\top}$\\
+%	$k_{f_d,u_q}(t,t')$ & cross-covariance between output $f_d(t)$ and function $u_q(t)$\\
+%	$k_{f_d,f_{d'}}(t,t')$ & cross-covariance between outputs $f_d(t)$ and $f_{d'}(t')$
+\end{tabular}
+
+\subsection*{Vectors and matrices}
+
+\begin{tabular}{m{3cm}m{12cm}}
+	
+	$\indobj$ & Observation of the $n$th object in the $v$th view, $\indobj \in \mathbb{R}^{D_v}$\\
+	$\phixnd$ & Observation of the $n$th feature object in the $v$th view, $\phixnd \in \mathbb{R}^{L_d}$\\
+	$\lvec$& Latent feature vector for the $j$th correspondence, $\lvec \in \mathbb{R}^{K}$ \\
+	$\projMat$& Projection matrix for the $v$th view, $\projMat \in \mathbb{R}^{L_d \times K}$ \\
+	$\mixwe$ & Mixture weight for the  $j$th cluster, $\mixwe \ge 0$, $\sum_{j=1}^{\infty}{\mixwe} = 1$\\
+	
+	% ---------
+%	$\boldu_q$ & $u_q(t)$ evaluated at $\boldt$ or $\boldlambda$, $\boldu_q = [u_q(\lambda_{1}),\ldots,u_q(\lambda_{M})]^{\top}$ \\
+%	$\boldu$ & vectors $\{\boldu_q\}_{q=1}^{Q}$, stacked in one column vector\\
+	$\Kv$ & covariance matrix with entries $\kernel{\indobj}{\indobj^\prime}$ \\
+%	$\boldK_{\boldu_q,\boldu_q}$ & covariance matrix with entries $k_{u_q,u_q}(t,t')$ evaluated at $\boldt$\\
+%	$\boldK_{\boldu,\boldu}$ & block-diagonal covariance matrix with blocks $\boldK_{\boldu_q,\boldu_q}$\\
+%	$\boldt_d$ & input time vector for output $d$, $\boldt_d = [t_{d,1},\ldots,t_{d,N_d}]^{\top}$\\
+%	$\boldt$ & vectors $\{\boldt_d\}_{d=1}^{D}$, stacked in one column vector\\
+	$\boldf_d$ & $f_d(t)$ evaluated at $\boldf_d = [f_d(t_{d,1}),\ldots,f_d(t_{d,N_d})]^{\top}$\\
+	$\boldf$ & vectors $\{\boldf_d\}_{d=1}^{D}$, stacked in one column vector\\
+%	$\boldK_{\boldf_{d},\boldf_{d'}}$ & covariance matrix with entries $k_{f_d,f_{d'}}(t,t')$\\
+%	$\boldK_{\boldf,\boldf}$ & covariance matrix with block $\boldK_{\boldf_{d},\boldf_{d'}}$\\
+	$\boldI_N$ & identity matrix of size $N$\\
+%	$\boldx_k$ & state vector evaluated at time $kT$
+\end{tabular}
+
+\subsection*{Abbreviations}
+\begin{tabular}{m{2cm}m{12cm}}
+%	ODE & Ordinary Differential Equation\\
+%	LTI & Linear Time-Invariant\\	
+	LVM & Latent Variable Model\\
+	UCM & Unsupervised Clustering Matching\\
+	GP & Gaussian Process\\
+	GP-LVM & Gaussian Process Latent Variable Model \\
+%	CGP & Convolved Gaussian Process\\
+%	LFM & Latent Force Model\\
+%	SLFM & Sequential Latent Force Model\\
+	iGMM & Infinite Gaussian Mixture Model\\
+	DP & Dirichlet Process\\
+	EM & Expectation Maximization\\
+%	CLP & Convolved Laguerre Process\\
+%	SLP & Sequential Laguerre Process\\
+%	NMSE & normalised mean square error\\
+%	NLPD & negative log predictive density
+\end{tabular}
+
+
+\outbpdocument{}
+
+

@@ -1,0 +1,24 @@
+\mode<presentation>
+
+\definecolor{udea green}{rgb}{0.255,0.678,.286}
+
+% Frame title
+\defbeamertemplate*{frametitle}{udea}[1][]
+{
+	\vskip.8cm%
+	\begin{beamercolorbox}[wd=.3\paperwidth,ht=.6cm, dp=0.0cm]{frametitle} 
+		\begin{tikzpicture}
+		%\useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
+		%\fill[orange] (0,0) rectangle(2.95,1.2);
+		%\fill[blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.2);
+		\ifx\insertframesubtitle\@empty%
+		{\node[anchor=west, udea green,font={\bfseries \large}] at (0,0.81){\insertframetitle};}
+		\else%
+		{\node[anchor= west, udea green,font={\bfseries \large}] at (0,0.81){\insertframetitle};%
+		 \node[anchor= west, green,font=\small] at (0,.41){\insertframesubtitle};}%
+		\fi
+		\end{tikzpicture}
+	\end{beamercolorbox}
+}
+
+\mode<all>
