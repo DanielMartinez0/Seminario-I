@@ -1787,7 +1787,11 @@ Enter file name:
 <read *> 
          
 l.87 \input{thesis-info}
+<<<<<<< HEAD
                         
+=======
+                        
+>>>>>>> 6f3545b4ded4c97696096336c7ea78532bed1bcc
 *** (cannot \read from terminal in nonstop modes)
 
  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %
 % A header that lets you compile a chapter by itself, or inside a larger document.
 % Adapted from stackoverflow.com/questions/3655454/conditional-import-in-latex
@@ -41,3 +42,48 @@
 		\newcommand{\outbpdocument}[1]{}
 	\fi
 \fi
+=======
+%
+% A header that lets you compile a chapter by itself, or inside a larger document.
+% Adapted from stackoverflow.com/questions/3655454/conditional-import-in-latex
+%
+%
+%Use \inbpdocument and \outbpdocument in your individual files, in place of \begin{document} and \end{document}. In your main file, put in a \def \ismaindoc {} before including or importing anything.
+%
+% David Duvenaud
+% June 2011
+% 
+% ======================================
+%
+%
+
+
+\ifx\ismaindoc\undefined
+	\newcommand{\inbpdocument}{
+		\def \ismaindoc {}
+		% Use this header if we are compiling by ourselves.
+		\documentclass[a4paper,11pt,authoryear,index]{common/PhDThesisPSnPDF}
+		\input{common/official-preamble.tex}
+		\input{common/preamble.tex}
+		\input{common/thesis-info}
+
+		\begin{document}
+	}	
+	\newcommand{\outbpdocument}[1]{
+
+		% Fake chapters so references aren't broken
+\label{ch:intro}                
+
+		%\bibliographystyle{common/CUEDthesis}
+		\bibliographystyle{plainnat}
+		\bibliography{biblio_udea,publications_udea}
+		\end{document}
+	}	
+\else
+	%If we're inside another document, no need to re-start the document.
+	\ifx\inbpdocument\undefined
+		\newcommand{\inbpdocument}{}
+		\newcommand{\outbpdocument}[1]{}
+	\fi
+\fi
+>>>>>>> 6f3545b4ded4c97696096336c7ea78532bed1bcc
