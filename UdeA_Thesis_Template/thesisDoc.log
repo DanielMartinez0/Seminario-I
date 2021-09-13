@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.1)  12 SEP 2021 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.1)  12 SEP 2021 20:17
 entering extended mode
 **./thesisDoc.tex
 (thesisDoc.tex
@@ -1319,8 +1319,7 @@ LaTeX Info: Redefining \today on input line 736.
 )
 (D:\Program Files\MiKTeX\tex/latex/natbib\bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
-)
-No file thesisDoc.bbl.
+) (thesisDoc.bbl)
 (D:\Program Files\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
@@ -1639,7 +1638,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 pdfTeX warning: pdflatex.exe (file ./misc/lodoUdeA1.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
-<misc/lodoUdeA1.pdf, id=166, 340.53726pt x 436.20667pt>
+<misc/lodoUdeA1.pdf, id=170, 340.53726pt x 436.20667pt>
 File: misc/lodoUdeA1.pdf Graphic file (type pdf)
 <use misc/lodoUdeA1.pdf>
 Package pdftex.def Info: misc/lodoUdeA1.pdf  used on input line 125.
@@ -1664,7 +1663,7 @@ Package pdftex.def Info: misc/lodoUdeA1.pdf  used on input line 125.
 
 
 {C:/Users/fepo6/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./misc/lodoUdeA
-1.pdf>] (committee.tex (common/header.tex) [2]
+1.pdf>] (committee.tex (common/header.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
@@ -1674,9 +1673,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
-) (misc/dedication_udea.tex [3
+) (misc/dedication_udea.tex [2
 
-]) (misc/acknowledgement_udea.tex [4
+]) (misc/acknowledgement_udea.tex [3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1699,30 +1698,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
-) (misc/abstract_udea.tex [5
+) (misc/abstract_udea.tex [4
 
 
-]) [6
+]) [5
 
 
-] (thesisDoc.toc [7
+] (thesisDoc.toc [6
 
 ])
 \tf@toc=\write7
 \openout7 = `thesisDoc.toc'.
 
- [8] (thesisDoc.lof)
+ [7] (thesisDoc.lof)
 \tf@lof=\write8
 \openout8 = `thesisDoc.lof'.
 
 
-[9
+[8
 
 ] (thesisDoc.lot)
 \tf@lot=\write9
 \openout9 = `thesisDoc.lot'.
 
- (notation.tex (common/header.tex) [10
+ (notation.tex (common/header.tex) [9
 
 ]
 Overfull \hbox (2.66042pt too wide) in paragraph at lines 20--33
@@ -1744,11 +1743,9 @@ Overfull \hbox (2.66042pt too wide) in paragraph at lines 58--81
 [] 
  []
 
-[11
+[10
 
-]) [12] (intro_udea.tex (common/header.tex) [1
-
-]
+]) [11] (intro_udea.tex (common/header.tex)
 Chapter 1.
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
@@ -1783,44 +1780,37 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 2.
 (D:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [2
+) [1
+
 
 ]) (background_udea.tex
-(common/header.tex) [3]
+(common/header.tex) [2]
 Chapter 2.
-
-Package natbib Warning: Citation `article' on page 4 undefined on input line 14
-.
-
-(common/header.tex) [4
+(common/header.tex) [3
 
 ]
 Chapter 3.
-
-Package natbib Warning: Citation `article' on page 5 undefined on input line 36
-.
-
-) (Conclusions_udea.tex (common/header.tex) [5
+) (Conclusions_udea.tex (common/header.tex) [4
 
 ]
 Chapter 4.
-(common/header.tex) [6
+(common/header.tex) [5
 
 ]
 Chapter 5.
-) (appendix_udea.tex (common/header.tex) [7
+) (appendix_udea.tex (common/header.tex) [6
 
-] [8]
+]
 Appendix A.
-[9
+[7
 
 ]
 Appendix B.
-[10
+[8
 
 ]
 Appendix C.
-[11
+[9
 
 ]
 Appendix D.
@@ -1832,19 +1822,19 @@ Package natbib Warning: Citation `murphy2013machine' undefined on input line 29
 Package natbib Warning: Citation `cargill2009writing' undefined on input line 3
 0.
 
-(common/header.tex) [12
+(common/header.tex) [10
 
 ]
 Appendix E.
-[13
+[11
 
 ]
 Appendix F.
-[14
+[12
 
 ]
 Appendix G.
-[15
+[13
 
 ]
 Appendix H.
@@ -1867,10 +1857,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.cargill2
 <to be read again> 
                    \relax 
 l.68 	\item \bibentry{cargill2009writing}
-                                         ) [16
+                                         ) [14
+
+] (thesisDoc.bbl (thesisDoc.brf)
+\tf@brf=\write10
+\openout10 = `thesisDoc.brf'.
+
+) [15
+
 
 ]
-No file thesisDoc.bbl.
 No file thesisDoc.ind.
 
 Package natbib Warning: There were undefined citations.
@@ -1884,17 +1880,19 @@ LaTeX3 Info: Redefining command \BeforeClosingMainAux with sig. 'm' on line
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesisDoc.out' has not changed.
-(rerunfilecheck)             Checksum: F04E709BAA5131E816C92B25BB440CD8;5248.
+(rerunfilecheck)             Checksum: AA924D7163025E47C470602D94440F79;5344.
+Package rerunfilecheck Info: File `thesisDoc.brf' has not changed.
+(rerunfilecheck)             Checksum: 000D5C6E487D4387AB68F6995AB05F87;86.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 752 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 42601 strings out of 479081
- 943748 string characters out of 2862516
- 1441950 words of memory out of 3000000
- 59334 multiletter control sequences out of 15000+600000
+ 42623 strings out of 479081
+ 944331 string characters out of 2862516
+ 1442106 words of memory out of 3000000
+ 59349 multiletter control sequences out of 15000+600000
  482566 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,11n,122p,1018b,26346s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1912,9 +1910,9 @@ pe1/public/lm/lmr8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pf
 b><D:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><D:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb>
-Output written on thesisDoc.pdf (28 pages, 1492523 bytes).
+Output written on thesisDoc.pdf (26 pages, 1493485 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
+ 465 PDF objects out of 1000 (max. 8388607)
  77 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.1)  9 SEP 2021 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.1)  12 SEP 2021 20:13
 entering extended mode
 **./presentationTemplate.tex
 (presentationTemplate.tex
@@ -1523,17 +1523,17 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (presentationTemplate.nav)
-<bg/portadaUdeA.png, id=32, 1590.54225pt x 853.68938pt>
+<bg/portadaUdeA.png, id=28, 1590.54225pt x 853.68938pt>
 File: bg/portadaUdeA.png Graphic file (type png)
 <use bg/portadaUdeA.png>
 Package pdftex.def Info: bg/portadaUdeA.png  used on input line 256.
 (pdftex.def)             Requested size: 455.22656pt x 256.08273pt.
-<bg/bottom_default_udea.png, id=33, 1156.32pt x 60.225pt>
+<bg/bottom_default_udea.png, id=29, 1156.32pt x 60.225pt>
 File: bg/bottom_default_udea.png Graphic file (type png)
 <use bg/bottom_default_udea.png>
 Package pdftex.def Info: bg/bottom_default_udea.png  used on input line 256.
 (pdftex.def)             Requested size: 457.0076pt x 23.80193pt.
-<bg/top_title_udea.png, id=35, 1156.32pt x 72.87225pt>
+<bg/top_title_udea.png, id=31, 1156.32pt x 72.87225pt>
 File: bg/top_title_udea.png Graphic file (type png)
 <use bg/top_title_udea.png>
 Package pdftex.def Info: bg/top_title_udea.png  used on input line 256.
@@ -1543,7 +1543,7 @@ Package pdftex.def Info: bg/top_title_udea.png  used on input line 256.
 {C:/Users/fepo6/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./bg/portadaUde
 A.png> <./bg/bottom_default_udea.png> <./bg/top_title_udea.png>] (presentationT
 emplate.toc)
-<bg/bottom_title_udea.png, id=50, 1156.32pt x 60.225pt>
+<bg/bottom_title_udea.png, id=46, 1156.32pt x 60.225pt>
 File: bg/bottom_title_udea.png Graphic file (type png)
 <use bg/bottom_title_udea.png>
 Package pdftex.def Info: bg/bottom_title_udea.png  used on input line 271.
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: bg/top_title_udea.png  used on input line 331.
  [7
 
  <D:/Program Files/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
-<bg/UdeABg.png, id=142, 602.25pt x 401.70074pt>
+<bg/UdeABg.png, id=139, 602.25pt x 401.70074pt>
 File: bg/UdeABg.png Graphic file (type png)
 <use bg/UdeABg.png>
 Package pdftex.def Info: bg/UdeABg.png  used on input line 346.
@@ -1653,7 +1653,7 @@ Package pdftex.def Info: bg/top_title_udea.png  used on input line 346.
  [8
 
  <./bg/UdeABg.png>]
-<bg/despedida_udea.png, id=148, 1156.32pt x 305.943pt>
+<bg/despedida_udea.png, id=145, 1156.32pt x 305.943pt>
 File: bg/despedida_udea.png Graphic file (type png)
 <use bg/despedida_udea.png>
 Package pdftex.def Info: bg/despedida_udea.png  used on input line 356.
@@ -1684,8 +1684,18 @@ Package caption Warning: Unused \captionsetup[table] on input line 31.
 See the caption package documentation for explanation.
 
 (presentationTemplate.aux)
-Package rerunfilecheck Info: File `presentationTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: F9EB463A2637328981327DC8387F5F10;604.
+
+Package rerunfilecheck Warning: File `presentationTemplate.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `presentationTemplate.out':
+(rerunfilecheck)             Before: 6E5E78C5E6FD9F6339FF60F4F2832C97;511
+(rerunfilecheck)             After:  F9EB463A2637328981327DC8387F5F10;604.
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'presentationTemplate.run.xml'.
 \openout1 = `presentationTemplate.run.xml'.
 
@@ -1695,20 +1705,20 @@ Package logreq Info: Writing requests to 'presentationTemplate.run.xml'.
 ### simple group (level 1) entered at line 39 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 44179 strings out of 479081
- 998300 string characters out of 2862516
- 1619323 words of memory out of 3000000
- 61017 multiletter control sequences out of 15000+600000
+ 44173 strings out of 479081
+ 998479 string characters out of 2862516
+ 1619256 words of memory out of 3000000
+ 61011 multiletter control sequences out of 15000+600000
  449365 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,124p,1871b,18215s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,124p,1871b,18211s stack positions out of 5000i,500n,10000p,200000b,80000s
 {D:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Progra
 m Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX/fon
 ts/type1/urw/helvetic/uhvr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helve
 tic/uhvro8a.pfb>
-Output written on presentationTemplate.pdf (9 pages, 2408181 bytes).
+Output written on presentationTemplate.pdf (9 pages, 2407904 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
+ 172 PDF objects out of 1000 (max. 8388607)
  25 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
